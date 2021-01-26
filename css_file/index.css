@@ -1,0 +1,202 @@
+@import"./nav_bar.css";
+@import"./footer.css";
+@font-face {
+    font-family: "F1_bold";
+    src: url("../font/Formula1-Bold.otf");
+    /* src: url("https://alldata.sgp1.digitaloceanspaces.com/fonts/NotoSerifTC/NotoSerifTC-Light.otf"); */
+}
+
+@font-face {
+    font-family: "F1_regular";
+    src: url("../font/Formula1-Regular.otf");
+    /* src: url("https://alldata.sgp1.digitaloceanspaces.com/fonts/NotoSerifTC/NotoSerifTC-Light.otf"); */
+}
+
+
+
+img.img_flow {
+    /* border: 1px solid brown; */
+    min-height: 100%;
+    width: 100%;
+    font-size: 0px;
+}
+
+div.our_fleet {
+    position: relative;
+}
+
+div.our_fleet img.background_img {
+    min-height: 100%;
+    width: 100%;
+}
+
+span.fleet_content {
+    display: inline-block;
+    /* border: 2px solid orange; */
+    position: absolute;
+    bottom: 45%;
+    font-size: 25px;
+    width: 100%;
+    padding-left: 3%;
+    vertical-align: middle;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+a.link_fleet {
+    /* border: 1px solid black; */
+    font-size: 40px;
+    font-family: "F1_bold";
+    text-decoration: none;
+    color: black;
+}
+
+a.link_fleet div.arrow {
+    display: inline;
+    color: rgb(216, 40, 28);
+}
+
+div.bottom_session h1.topic {
+    margin: 0px;
+    font-family: f1_regular;
+    color: rgb(216, 40, 28);
+    padding-top: 2%;
+    z-index: 1;
+    font-size: 40px;
+}
+
+div.bottom_session {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 1200px;
+    font-size: 0;
+}
+
+div.bottom_session a.instructor img {
+    /* border: 1px solid green; */
+    position: absolute;
+    right: 0;
+    margin-top: 10%;
+    padding-right: 20px;
+}
+
+div.bottom_session a.simulator img {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    left: 5%;
+    margin-top: 8%;
+    z-index: 1;
+}
+
+div.bottom_session a.racing_circuit img {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    left: 5%;
+    margin-top: 34%;
+    z-index: 1;
+}
+
+div.bottom_session a.gt4 img {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    left: 2%;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 6.2%;
+}
+
+div.bottom_session div.gt4_content {
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 33%;
+    margin-left: 3%;
+    display: block;
+}
+
+div.bottom_session div.gt4_content>h3 {
+    color: rgb(216, 40, 28);
+    font-family: "F1_bold";
+    font-size: 24px;
+}
+
+div.bottom_session div.gt4_content>p {
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+    line-height: 1.3;
+}
+
+div.bottom_session a.review {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 25%;
+    margin-bottom: 5.9%;
+}
+
+div.bottom_session a.event {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-bottom: 5.9%;
+}
+
+div.bottom_session div.review_content {
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 200px;
+    margin-right: 26%;
+    margin-bottom: 8%;
+}
+
+div.bottom_session div.review_content>h3 {
+    color: rgb(216, 40, 28);
+    font-family: "F1_bold";
+    font-size: 20px;
+}
+
+div.bottom_session div.review_content>p {
+    line-height: 1.3;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+}
+
+div.bottom_session div.review_content h4.reviewer {
+    font-family: "F1_regular";
+    font-size: 16px;
+    position: relative;
+}
+
+div.bottom_session div.event_content {
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 200px;
+    margin-right: 3%;
+    margin-bottom: 8%;
+}
+
+div.bottom_session div.event_content>h3 {
+    color: rgb(216, 40, 28);
+    font-family: "F1_bold";
+    font-size: 20px;
+}
+
+div.bottom_session div.event_content>p {
+    line-height: 1.3;
+    font-family: 'Arimo', sans-serif;
+    height: 145px;
+    font-size: 16px;
+}
+
+div.bottom_session div.event_content h4.event {
+    font-family: "F1_regular";
+    font-size: 16px;
+}

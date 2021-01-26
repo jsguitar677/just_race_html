@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>track preview</title>
+        <link rel="icon" href="./logo/title_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css_file/index.css">
+        <script type="text/javascript" src="./plugins/aos.js"></script>
+        <link rel="stylesheet" href="css_file/aos.css">
+    
+    </head>
+    
+    <body>
+        <div id="container">
+            <header id="main_header">
+                <nav class="main_nav">
+                    <a href="./index.html" class="logo_img">
+                        <img src="./logo/logo_img.png" class="logo"></a>
+                    <a href="#" class="showmenu">menu</a>
+                    <ul class="link_list">
+                        <li><a class="d_e" href="./driving_experience.html">Driving Experience</a></li>
+                        <li><a class="o_f" href="./just_race_fleet.html">Our Fleet</a></li>
+                        <li><a class="t_p" href="#">Track Preview </a></li>
+                        <li><a class="about" href="./about.html">About</a></li>
+                        <li><a class="b_n" href="./book.html">Book Now</a></li>
+                    </ul>
+                    <ul class="hiden_list">
+                        <li><a class="d_e" href="./driving_experience.html">Driving Experience.</a></li>
+                        <li><a class="o_f" href="./just_race_Fleet.html">Our Fleet</a></li>
+                        <li><a class="t_p" href="./track_preview.html">Track Preview. </a></li>
+                        <li><a class="about" href="./about.html">About.</a></li>
+                        <li><a class="b_n" href="./book.html">Book Now.</a></li>
+                    </ul>
+                    <marquee class="alert">
+                        <li>
+                            <font color="yellow">!</font> Current Track Condition : dry and clean, surface temperature: 12 degrees.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    
+                            <font color="yellow">!</font> COVID-19 AlERT : We’ve cancelled our Track Day and all our Drive experiences for November and anyone booked in will be emailed with an update. </li>
+                        We’ll be rescheduling as soon as restrictions are lifted and it’s safe to do so. </li>
+    
+                    </marquee>
+                </nav>
+            </header>
+    
+            <div class="pic_container"> 
+                <video src="./video/gt2_video.mp4" width="100%" autoplay loop data-aos="zoom-out" data-aos-duration="3000"></video>
+            </div>
+
+
+
+
+        <div class="our_fleet">
+            <span class="fleet_content">
+          Are You Ready?<br>
+          We provide various types of<br> 
+          high end sports cars from different ranges<br>
+          we will make sure you can enjoy the<br> 
+          driving session without any hesitation!<br>
+          <br>
+          <a class="link_fleet" href="./just_race_Fleet.html">Our Fleet<div class=arrow>></div></a>
+          </span>
+            <img src="./pictures/our_fleet_background.png" class="background_img">
+        </div>
+
+
+
+
+        <div class="bottom_session">
+            <h1 class="topic">Class Leading HardWare And Instructor</h1>
+            <img src="./pictures/bottom_frame.png" class="frame_bg">
+            <a href="./about.html" class="instructor"><img src="./pictures/instructor.png"></a>
+            <a href="./driving_experience.html" class="simulator"><img src="./pictures/simulator.png" width="508px"></a>
+            <a href="./track_preview.html" class="racing_circuit"><img src="./pictures/racing_circuit.png" width="508px"></a>
+            <a href="#" class="gt4"><img src="./pictures/gt4.png" width="558px"></a>
+            <a href="#" class="review"><img src="./pictures/review.png" width=""></a>
+            <a href="#" class="event"><img src="./pictures/event.png" width=""></a>
+            <div class="gt4_content">
+                <h3>Latest News</h3>
+                <p>718 Cayman GT4 is the perfect sports car.<br>For those who would rather ask ‘why not?’ than ‘why?’.<br> For those who take fun seriously and who would rather sit<br> in a sport seat than a leather armchair.</p>
+            </div>
+            <div class="review_content">
+                <h3>Review</h3>
+                <p>I booked for my husband as a celebration for his birthday. His best best friend came with him and drove as well.I haven’t stopped hearing about for 3 days.</p>
+                <br>
+                <h4 class="reviewer">-Sashia-</h4>
+            </div>
+            <div class="event_content">
+                <h3>Event</h3>
+                <p>Enhance your experience by driving more cars and laps. The more you drive, the more you save! Also, if you drive different supercars.</p>
+                <br>
+                <h4 class="event">-Admin-</h4>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <img src="./pictures/banner_img.png" height="3px">
+            <h1>© Just Race Limited
+                <h1>
+        </div>
+    </div>
+
+
+
+    <script>
+        // $(document).ready(function() {
+        //     $('.showmenu').on('click', function(e) {
+        //         // e.preventDefault();
+        //         $('ul .hiden_list').css('transform', "translate(0%)");
+        //     });
+        // });
+        let showmenu = document.querySelector(".showmenu");
+        showmenu.addEventListener("click", function() {
+            let hiden_list = document.querySelector(".hiden_list");
+            hiden_list.classList.toggle("show");
+            // console.log(hiden_list);
+        })
+    </script>
+    <script>
+        (function() {
+
+            var doc = document.documentElement;
+            var w = window;
+
+            var prevScroll = w.scrollY || doc.scrollTop;
+            var curScroll;
+            var direction = 0;
+            var prevDirection = 0;
+
+            var header = document.getElementById('main_header');
+
+            var checkScroll = function() {
+
+                /*
+                 ** Find the direction of scroll
+                 ** 0 - initial, 1 - up, 2 - down
+                 */
+
+                curScroll = w.scrollY || doc.scrollTop;
+                if (curScroll > prevScroll) {
+                    //scrolled up
+                    direction = 2;
+                } else if (curScroll < prevScroll) {
+                    //scrolled down
+                    direction = 1;
+                }
+
+                if (direction !== prevDirection) {
+                    toggleHeader(direction, curScroll);
+                }
+
+                prevScroll = curScroll;
+            };
+
+            var toggleHeader = function(direction, curScroll) {
+                if (direction === 2 && curScroll > 52) {
+
+                    //replace 52 with the height of your header in px
+
+                    header.classList.add('hide');
+                    prevDirection = direction;
+                } else if (direction === 1) {
+                    header.classList.remove('hide');
+                    prevDirection = direction;
+                }
+            };
+
+            window.addEventListener('scroll', checkScroll);
+
+        })();
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
